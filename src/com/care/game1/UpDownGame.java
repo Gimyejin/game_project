@@ -49,7 +49,7 @@ public class UpDownGame {
 					}else if(c==1){
 						System.out.println(" ===  보다 위에요!  ===");
 						score++;
-					}else if(c==2){
+					}else if(c==2) {
 						System.out.println(" ===  보다 밑이에요!  === ");
 						score++;
 
