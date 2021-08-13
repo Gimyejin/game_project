@@ -2,10 +2,10 @@ package com.care.def;
 
 import java.util.Scanner;
 
-
 import com.care.game02.Game02_leenayoung;
-
+import com.care.game3.PickupGame;
 import com.care.game4.Game04;
+
 
 
 public class MainClass {
@@ -36,6 +36,8 @@ public class MainClass {
 				g2.main(args);
 				break;
 			case 3:
+				PickupGame g3 = new PickupGame();
+				g3.start();
 				System.out.println("æ∆¿Ã≈€ ªÃ±‚");
 				break;
 			case 4:
