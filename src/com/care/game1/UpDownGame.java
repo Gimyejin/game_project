@@ -77,11 +77,9 @@ public class UpDownGame {
 				System.out.println("가장 빠른 기록 "+updw.record()+"회!");
 				break;
 			case 3:
-				System.out.println("게임 종료!");
+				System.out.println("게임종료");
 				return ;
 			}
 		}	
-		
 	}
-	
 }
