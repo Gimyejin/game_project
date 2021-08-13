@@ -2,6 +2,8 @@ package com.care.def;
 
 import java.util.Scanner;
 
+import com.care.game1.UpDownGame;
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -19,6 +21,8 @@ public class MainClass {
 			switch (num) {
 			case 1:
 				System.out.println("Up&Down 숫자맞추기");
+				UpDownGame updw = new UpDownGame();
+				updw.display();
 				break;
 			case 2:
 				System.out.println("가위바위보");
