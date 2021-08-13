@@ -3,6 +3,7 @@ package com.care.def;
 import java.util.Scanner;
 
 import com.care.game02.Game02_leenayoung;
+import com.care.game1.UpDownGame;
 import com.care.game3.PickupGame;
 import com.care.game4.Game04;
 
@@ -28,6 +29,8 @@ public class MainClass {
 			num = input.nextInt();
 			switch (num) {
 			case 1:
+				UpDownGame g1=new UpDownGame();
+				//g1.UpDownGame();
 				System.out.println("Up&Down 숫자맞추기");
 				break;
 			case 2:
@@ -42,7 +45,6 @@ public class MainClass {
 				break;
 			case 4:
 				System.out.println("끝말잇기");
-				Game04 g4=new Game04();
 				si.run();
 				break;
 			case 5:
