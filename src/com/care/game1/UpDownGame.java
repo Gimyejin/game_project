@@ -24,7 +24,7 @@ class UpDown{
 }
 
 public class UpDownGame {
-	public static void main(String[] args) {
+	public void display() {
 		UpDown updw = new UpDown();
 		Scanner sc = new Scanner(System.in);
 		int a=0, com=0, c=0, score=0, result=0;
