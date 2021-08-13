@@ -40,6 +40,7 @@ public class MainClass {
 				break;
 			case 4:
 				System.out.println("≥°∏ª¿’±‚");
+				Game04 g4=new Game04();
 				si.run();
 				break;
 			case 5:
