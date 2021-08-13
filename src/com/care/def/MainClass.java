@@ -2,6 +2,8 @@ package com.care.def;
 
 import java.util.Scanner;
 
+import com.care.game02.Game02_leenayoung;
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -22,6 +24,8 @@ public class MainClass {
 				break;
 			case 2:
 				System.out.println("가위바위보");
+				Game02_leenayoung g2 = new Game02_leenayoung();
+				g2.main(args);
 				break;
 			case 3:
 				System.out.println("아이템 뽑기");
