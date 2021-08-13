@@ -2,7 +2,7 @@ package com.care.game4;
 
 import java.util.Scanner;
 
-public class Shiritori {
+public class Game04 {
 	String word = null;
 	String[] wordList = { "지금", "금수저", "저장", "강산", "산책", "책임" }; 
 	
@@ -10,7 +10,7 @@ public class Shiritori {
 	public void setWord(String word) {this.word = word;	}
 	
 	public void run() {
-		Shiritori si = new Shiritori();
+		Game04 si = new Game04();
 		si.word = si.wordList[(int)(Math.random()*si.wordList.length)];
 		
 		Scanner scan = new Scanner(System.in);

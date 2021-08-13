@@ -2,13 +2,13 @@ package com.care.def;
 
 import java.util.Scanner;
 
-import com.care.game4.Shiritori;
+import com.care.game4.Game04;
 
 public class MainClass {
 
 	public static void main(String[] args) {
 		
-		Shiritori si = new Shiritori();
+		Game04 si = new Game04();
 		
 		Scanner input = new Scanner(System.in);
 		int num;
