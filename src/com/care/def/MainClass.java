@@ -12,8 +12,6 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		Game04 si = new Game04();
-		
 		Scanner input = new Scanner(System.in);
 		int num;
 		System.out.println("--- 게임기 ---");
@@ -43,7 +41,7 @@ public class MainClass {
 			case 4:
 				System.out.println("끝말잇기");
 				Game04 g4=new Game04();
-				si.run();
+				g4.run();
 				break;
 			case 5:
 				System.out.println("게임을 종료합니다.");
