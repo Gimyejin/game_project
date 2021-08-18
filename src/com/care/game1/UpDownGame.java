@@ -24,7 +24,7 @@ class UpDown{
 }
 
 public class UpDownGame {
-	public static void main(String[] args) {
+	public void display() {
 		UpDown updw = new UpDown();
 		Scanner sc = new Scanner(System.in);
 		int a=0, com=0, c=0, score=0, result=0;
@@ -77,9 +77,11 @@ public class UpDownGame {
 				System.out.println("가장 빠른 기록 "+updw.record()+"회!");
 				break;
 			case 3:
-				System.out.println("게임종료");
+				System.out.println("게임 종료!");
 				return ;
 			}
 		}	
+		
 	}
+	
 }

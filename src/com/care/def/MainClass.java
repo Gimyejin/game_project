@@ -8,12 +8,9 @@ import com.care.game3.PickupGame;
 import com.care.game4.Game04;
 
 
-
 public class MainClass {
 
 	public static void main(String[] args) {
-		
-		Game04 si = new Game04();
 		
 		Scanner input = new Scanner(System.in);
 		int num;
@@ -32,6 +29,8 @@ public class MainClass {
 				UpDownGame g1=new UpDownGame();
 				//g1.UpDownGame();
 				System.out.println("Up&Down 숫자맞추기");
+				UpDownGame updw = new UpDownGame();
+				updw.display();
 				break;
 			case 2:
 				System.out.println("가위바위보");
@@ -45,12 +44,16 @@ public class MainClass {
 				break;
 			case 4:
 				System.out.println("끝말잇기");
-				si.run();
+				Game04 g4=new Game04();
+				g4.run();
+
 				break;
 			case 5:
 				System.out.println("게임을 종료합니다.");
 				System.exit(1);
 			}
+
 		}
+
 	}
 }

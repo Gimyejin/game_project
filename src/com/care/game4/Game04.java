@@ -22,6 +22,10 @@ public class Game04 {
 			while(cnt!=0) {			
 			System.out.println(si.word+" 뒤에 이을 글자를 입력하세요: ");
 			String s = scan.next();
+			
+			if(s.equals(si.word)) { 
+				System.out.println("같은 단어입니다"); cnt--; }
+				else {
 			switch(x) {
 			case 1: if ((s.length()==4 || s.length()==3) && (si.word.charAt(si.word.length() - 1) == s.charAt(0))) {
 				si.word = s ; win++; cnt=2;
@@ -40,7 +44,7 @@ public class Game04 {
 				} break;
 			default : System.out.println("잘못 입력하였습니다"); 			
 			}	
-			}
+			}  }
 			System.out.println("게임을 종료합니다.\n"+win+"회 성공");
 	}
 }
