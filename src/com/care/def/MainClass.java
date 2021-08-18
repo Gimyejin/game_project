@@ -3,11 +3,10 @@ package com.care.def;
 import java.util.Scanner;
 
 import com.care.game02.Game02_leenayoung;
+import com.care.game1.UpDownGame;
 import com.care.game3.PickupGame;
 import com.care.game4.Game04;
 
-
-import com.care.game1.UpDownGame;
 
 public class MainClass {
 
@@ -27,6 +26,8 @@ public class MainClass {
 			num = input.nextInt();
 			switch (num) {
 			case 1:
+				UpDownGame g1=new UpDownGame();
+				//g1.UpDownGame();
 				System.out.println("Up&Down 숫자맞추기");
 				UpDownGame updw = new UpDownGame();
 				updw.display();
@@ -45,6 +46,7 @@ public class MainClass {
 				System.out.println("끝말잇기");
 				Game04 g4=new Game04();
 				g4.run();
+
 				break;
 			case 5:
 				System.out.println("게임을 종료합니다.");
