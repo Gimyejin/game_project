@@ -1,9 +1,26 @@
-package com.care.game02;
+package com.care.game2;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Game02_leenayoung {
+class Advertise {
+	public void display() {
+		System.out.println(" ---- 광고 타임 ---- ");
+		System.out.println("5초만 기다려 주세요~~");
+		for(int i=0; i<5; i++) {
+			System.out.print(">");
+			try {
+				Thread.sleep(1000);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		System.out.println("게임을 다시 시작합니다!");
+	}
+	
+}
+
+public class Game2_leenayoung extends Advertise {
 	static public final int Rock =0;
 	static public final int Scis =1;
 	static public final int Paper =2;
@@ -17,6 +34,7 @@ public class Game02_leenayoung {
 		boolean isPlaying = true;
 		Random rnd = new Random();
 		Scanner sc = new Scanner(System.in);
+		Advertise ad = new Advertise();
 		
 		System.out.println("게임을 시작합니다!");
 		while(isPlaying) {
@@ -33,6 +51,7 @@ public class Game02_leenayoung {
 					   isPlaying = false;
 					   break;
 			case Lose: System.out.println("졌습니다. 한번더!");
+					   ad.display();
 					   break;
 			}
 		}
