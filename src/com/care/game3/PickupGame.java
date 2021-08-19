@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 import com.care.def.MainClass;
 
-public class PickupGame {
+public class PickupGame extends Print {
 	Scanner input = new Scanner(System.in);
 	private int coin;
 	HashMap<Integer, String> item = new HashMap<Integer, String>();
 	ArrayList pick = new ArrayList();
-
+	HashMap< String, String > useprint =new HashMap<String, String>();
 	public void start() {
 		System.out.println("---- 아이템 뽑기 ----");
 		System.out.print("돈을 넣어주세요[100코인 당 1회] >>> ");
@@ -75,6 +75,11 @@ public class PickupGame {
 				}
 			case 2:
 				myItem();
+				System.out.println("아이템의 정보를 보시겠습니까? [yes/no]");
+				String choose = input.next();
+				if(choose.equals("yes")) {
+					super.cut(useprint);
+				}
 				break;
 			case 3:
 				System.exit(1);
@@ -123,6 +128,7 @@ public class PickupGame {
 		int finalIndex = i.indexOf("]");
 		i = i.substring(1, finalIndex);
 		pick.add(i);
+		useprint.put(i,item.get(key));
 	}
 
 	public void myItem() {// pick쓰기

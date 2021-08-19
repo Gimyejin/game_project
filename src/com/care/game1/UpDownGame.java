@@ -1,6 +1,7 @@
 package com.care.game1;
 
 import java.util.Scanner;
+import com.care.game1.*;
 
 class UpDown{
 	public int com,max=99;
@@ -23,10 +24,13 @@ class UpDown{
 	public int record() {	return max;	}
 }
 
-public class UpDownGame {
+public class UpDownGame extends Plus {
 	public void display() {
 		UpDown updw = new UpDown();
+		Plus pl = new Plus();
+		plus01 pl01 = new plus01();
 		Scanner sc = new Scanner(System.in);
+		int q, w = 0;
 		int a=0, com=0, c=0, score=0, result=0;
 		int player=0;
 		while(true) {
@@ -77,11 +81,10 @@ public class UpDownGame {
 				System.out.println("가장 빠른 기록 "+updw.record()+"회!");
 				break;
 			case 3:
-				System.out.println("게임 종료!");
+				System.out.println("게임종료");
+				pl01.show();
 				return ;
 			}
 		}	
-		
-	}
-	
+	} 
 }
