@@ -1,5 +1,5 @@
 package com.care.game02;
-
+//
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,21 +18,21 @@ public class Game02_leenayoung {
 		Random rnd = new Random();
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù!");
+		System.out.println("ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤!");
 		while(isPlaying) {
-			System.out.println("(0=¹ÙÀ§, 1=°¡À§, 2=º¸)");
-			System.out.print("ÀÔ·Â >>> ");
+			System.out.println("(0=ë°”ìœ„, 1=ê°€ìœ„, 2=ë³´)");
+			System.out.print("ì…ë ¥ >>> ");
 			int com = rnd.nextInt(3);
 			sel =sc.nextInt();
 			int result = WhoisWin(sel,com);
 			switch(result) {
-			case Win: System.out.println("ÀÌ°å½À´Ï´Ù!");
+			case Win: System.out.println("ì´ê²¼ìŠµë‹ˆë‹¤!");
 					  isPlaying = false;
 					  break;
-			case Draw: System.out.println("ºñ°å³×¿ä~");
+			case Draw: System.out.println("ë¹„ê²¼ë„¤ìš”~");
 					   isPlaying = false;
 					   break;
-			case Lose: System.out.println("Á³½À´Ï´Ù. ÇÑ¹ø´õ!");
+			case Lose: System.out.println("ì¡ŒìŠµë‹ˆë‹¤. í•œë²ˆë”!");
 					   break;
 			}
 		}
