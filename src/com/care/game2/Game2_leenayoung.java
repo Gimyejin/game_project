@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Advertise {
-	public void display() {
+	public void skip() {
 		System.out.println(" ---- 광고 타임 ---- ");
 		System.out.println("5초만 기다려 주세요~~");
 		for(int i=0; i<5; i++) {
@@ -51,7 +51,7 @@ public class Game2_leenayoung extends Advertise {
 					   isPlaying = false;
 					   break;
 			case Lose: System.out.println("졌습니다. 한번더!");
-					   ad.display();
+					   ad.skip();
 					   break;
 			}
 		}
