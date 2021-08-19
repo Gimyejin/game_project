@@ -1,10 +1,26 @@
-package com.care.game02;
-
+package com.care.game2;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Game02_leenayoung {
+class Advertise {
+	public void skip() {
+		System.out.println(" ---- ±¤°í Å¸ÀÓ ---- ");
+		System.out.println("5ÃÊ¸¸ ±â´Ù·Á ÁÖ¼¼¿ä~~");
+		for(int i=0; i<5; i++) {
+			System.out.print(">");
+			try {
+				Thread.sleep(1000);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		System.out.println("°ÔÀÓÀ» ´Ù½Ã ½ÃÀÛÇÕ´Ï´Ù!");
+	}
+	
+}
+
+public class Game2_leenayoung extends Advertise {
 	static public final int Rock =0;
 	static public final int Scis =1;
 	static public final int Paper =2;
@@ -13,27 +29,29 @@ public class Game02_leenayoung {
 	static public final int Draw = 0;
 	static public final int Lose = -1;
 	
-	public static void main(String[] args) {
+	public void display() {
 		int sel;
 		boolean isPlaying = true;
 		Random rnd = new Random();
 		Scanner sc = new Scanner(System.in);
+		Advertise ad = new Advertise();
 		
-		System.out.println("å¯ƒëš¯ì—«ï¿½ì“£ ï¿½ë–†ï¿½ì˜‰ï¿½ë¹€ï¿½ë•²ï¿½ë–!");
+		System.out.println("°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù!");
 		while(isPlaying) {
-			System.out.println("(0=è«›ë¶¿ì, 1=åª›ï¿½ï¿½ì, 2=è¹‚ï¿½)");
-			System.out.print("ï¿½ì—¯ï¿½ì ° >>> ");
+			System.out.println("(0=¹ÙÀ§, 1=°¡À§, 2=º¸)");
+			System.out.print("ÀÔ·Â >>> ");
 			int com = rnd.nextInt(3);
 			sel =sc.nextInt();
 			int result = WhoisWin(sel,com);
 			switch(result) {
-			case Win: System.out.println("ï¿½ì” å¯ƒì‡±ë’¿ï¿½ë•²ï¿½ë–!");
+			case Win: System.out.println("ÀÌ°å½À´Ï´Ù!");
 					  isPlaying = false;
 					  break;
-			case Draw: System.out.println("é®ê¾§ê¼ˆï¿½ê½•ï¿½ìŠ‚~");
+			case Draw: System.out.println("ºñ°å³×¿ä~");
 					   isPlaying = false;
 					   break;
-			case Lose: System.out.println("è­°ëš¯ë’¿ï¿½ë•²ï¿½ë–. ï¿½ë¸³è¸°ëˆëœ‘!");
+			case Lose: System.out.println("Á³½À´Ï´Ù. ÇÑ¹ø´õ!");
+					   ad.skip();
 					   break;
 			}
 		}
@@ -50,5 +68,4 @@ public class Game02_leenayoung {
 		return Lose;
 		
 	}
-
 }

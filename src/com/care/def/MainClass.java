@@ -2,11 +2,10 @@ package com.care.def;
 
 import java.util.Scanner;
 
-import com.care.game02.Game02_leenayoung;
-import com.care.game1.UpDownGame;
 import com.care.game3.PickupGame;
 import com.care.game4.Game04;
-
+import com.care.game1.UpDownGame;
+import com.care.game2.Game2_leenayoung;
 
 public class MainClass {
 
@@ -34,8 +33,8 @@ public class MainClass {
 				break;
 			case 2:
 				System.out.println("가위바위보");
-				Game02_leenayoung g2 = new Game02_leenayoung();
-				g2.main(args);
+				Game2_leenayoung g2 = new Game2_leenayoung();
+				g2.display();
 				break;
 			case 3:
 				PickupGame g3 = new PickupGame();
