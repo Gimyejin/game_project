@@ -29,7 +29,7 @@ public class Game2_leenayoung extends Advertise {
 	static public final int Draw = 0;
 	static public final int Lose = -1;
 	
-	public static void main(String[] args) {
+	public void display() {
 		int sel;
 		boolean isPlaying = true;
 		Random rnd = new Random();
